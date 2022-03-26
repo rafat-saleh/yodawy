@@ -1,3 +1,5 @@
+/** @format */
+
 import "./App.scss";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -12,20 +14,20 @@ import Contact from "./pages/contact/Contact";
 import ContactAr from "./pages/contact/ContactAr";
 import Shop from "./pages/shop/Shop";
 import ShopAr from "./pages/shop/ShopAr";
-import Blog from './pages/blog/Blog';
-import BlogAr from './pages/blog/BlogsAr';
+import Blog from "./pages/blog/Blog";
+import BlogAr from "./pages/blog/BlogsAr";
 import ForPharmaciesAr from "./pages/pharmacies/ForPharmaciesAr";
 import ForInsurersAr from "./pages/insurers/insurersAr";
 import ForDoctorsAr from "./pages/doctors/DoctorsAr";
 import AboutUsAr from "./pages/about-us/AboutUsAr";
-import Cart from './pages/crat/Cart';
-import CartAr from './pages/crat/CartAr';
-import Login from './pages/login/Login';
-import LoginAr from './pages/login/LoginAr';
-import AddProduct from './pages/addProducr/AddProduct';
-import AddProductAr from './pages/addProducr/AddProductAr';
-import NotFound from './components/notFound/NotFound';
-import NotFoundAr from './components/notFound/NotFoundAr';
+import Cart from "./pages/crat/Cart";
+import CartAr from "./pages/crat/CartAr";
+import Login from "./pages/login/Login";
+import LoginAr from "./pages/login/LoginAr";
+import AddProduct from "./pages/addProducr/AddProduct";
+import AddProductAr from "./pages/addProducr/AddProductAr";
+import NotFound from "./components/notFound/NotFound";
+import NotFoundAr from "./components/notFound/NotFoundAr";
 
 function App() {
   const context = useContext(Context);
@@ -37,10 +39,10 @@ function App() {
           {/* hello english */}
           <Switch>
             {/* <Redirect exact from="/" to="" /> */}
-            <Route path="/" exact>
+            <Route path="/w" exact>
               <Home />
             </Route>
-            <Route path="/shop" >
+            <Route path="/shop">
               <Shop />
             </Route>
             <Route path="/pharamcies" exact>
@@ -83,7 +85,7 @@ function App() {
             <Route path="/" exact>
               <HomeAr />
             </Route>
-            <Route path="/shop" >
+            <Route path="/shop">
               <ShopAr />
             </Route>
             <Route path="/pharamcies" exact>
