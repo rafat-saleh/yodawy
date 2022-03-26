@@ -39,7 +39,7 @@ function App() {
           {/* hello english */}
           <Switch>
             {/* <Redirect exact from="/" to="" /> */}
-            <Route path="/w" exact>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route path="/shop">
